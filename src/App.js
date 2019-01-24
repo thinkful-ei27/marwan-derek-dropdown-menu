@@ -1,24 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import DropdownMenu from './components/DropdownMenu';
+const menu = ["Item One", "Item Two", "Item Three"];
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h1>Dropdown Menu</h1>
+          <DropdownMenu menuItems={menu} />
         </header>
       </div>
     );
@@ -26,3 +17,11 @@ class App extends Component {
 }
 
 export default App;
+
+// App
+// - DropdownMenu
+// -- DropdownMenuItem
+// --- DropdownMenu
+// ---- DropdownMenuItems
+// ---- DropdownMenuItems
+// -- DropdownMenuItem
