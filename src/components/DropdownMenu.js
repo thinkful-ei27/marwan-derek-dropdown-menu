@@ -10,8 +10,8 @@ export default function DropdownMenu(props) {
     }
   };
   const createDropdownMenuItems = (menuItems) => {
-    const filteredMenu = filterMenuItems(menuItems, props.parent);
-    return filteredMenu.map(menuItem => <DropdownMenuItem key={menuItem.id} label={menuItem.label} parent={menuItem.parent} />);
+    const filteredMenu = menuItems;
+    return filteredMenu.map(menuItem => <DropdownMenuItem key={menuItem.id} id={menuItem.id} label={menuItem.label} parent={menuItem.parent} />);
   };
   return (
     <ul>
