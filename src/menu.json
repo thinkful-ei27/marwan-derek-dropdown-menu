@@ -1,0 +1,69 @@
+[
+  {
+    "label": "Characters", 
+    "id": 1
+  },
+  {
+    "label": "Vehicles", 
+    "id": 2
+  },
+  {
+     "label": "Planets", 
+     "id": 3
+  },
+  { 
+    "id": 4,
+    "label": "Rebel Alliance",
+    "parent": 1
+  },
+  { 
+    "id": 5,
+    "label": "Empire",
+    "parent": 1
+  },
+  { 
+    "id": 6,
+    "label": "Luke Skywalker",
+    "parent": 4
+  },
+  { 
+    "id": 7,
+    "label": "Leia Organa",
+    "parent": 4
+  },
+  { 
+    "id": 8,
+    "label": "Han Solo",
+    "parent": 4
+  },
+  { 
+    "id": 9,
+    "label": "Darth Vader",
+    "parent": 5
+  },
+  { 
+    "id": 10,
+    "label": "Boba Fett",
+    "parent": 5
+  },
+  { 
+    "id": 11,
+    "label": "Stormtrooper",
+    "parent": 5
+  },
+  {
+    "id": 12,
+    "label": "Millenium Falcon",
+    "parent": 2
+  },
+  {
+    "id": 13,
+    "label": "Star Destroyer",
+    "parent": 2
+  },
+  {
+    "id": 14,
+    "label": "X-Wing",
+    "parent": 2
+  }
+]
