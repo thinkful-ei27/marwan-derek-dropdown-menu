@@ -9,7 +9,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>Dropdown Menu</h1>
-          <DropdownMenu menuItems={menu} />
+          <nav>
+            <DropdownMenu menuItems={menu.filter(menuItem => !menuItem.parent)} />
+          </nav>
         </header>
       </div>
     );
