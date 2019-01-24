@@ -1,7 +1,38 @@
-li {
-  cursor: pointer;
+ul {
+  background: black;
+  border: 1px solid yellow;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav > ul {
+  display: flex;
 }
 
-.collapsed  {
-  display: none;
+ul ul {
+  position: absolute;
+  text-align: left;
+}
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  display:block;
+  padding: 1em;
+  text-decoration: none;
+}
+a:hover {
+  background: yellow;
+  color: black;
+}
+
+.active > a {
+  color: yellow;
+}
+.active > a:hover {
+  color: black;
 }
