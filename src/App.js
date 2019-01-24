@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import DropdownMenu from './components/DropdownMenu';
-const menu = ["Item One", "Item Two", "Item Three"];
+const menu = [{label: "Item One", id: 1}, {label: "Item Two", id: 2}, {label: "Item Three", id: 3}];
 
 class App extends Component {
   render() {

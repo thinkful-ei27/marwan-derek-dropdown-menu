@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function DropdownMenuItem(props) {
   return (
-    <li>{props.label}</li>
+    <li id={props.key}>{props.label}</li>
   );
 }
