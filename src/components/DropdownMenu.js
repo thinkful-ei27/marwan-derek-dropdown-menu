@@ -8,7 +8,7 @@ export default class DropdownMenu extends React.Component {
   }
   render () {
     return (
-      <ul className={this.props.isCollapsed ? "collapsed" : ""}>
+      <ul>
         {this.createDropdownMenuItems(this.props.menuItems)}
       </ul>
     );

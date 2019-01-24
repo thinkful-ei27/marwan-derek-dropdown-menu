@@ -10,14 +10,18 @@ export default class DropdownMenuItem  extends React.Component {
     }
   }
   handleChildren(menu,id){
-    console.log(id);
     const children = menu.filter(menuItem => menuItem.parent === id);
-    console.log(children);
-   return (<DropDownMenu menuItems={children} isCollapsed={this.state.collapsed} />);
+    if (children.length && !this.state.collapsed ) {
+      return (<DropDownMenu menuItems={children} />);
+    }
   }
   render () {
     return (
-      <li id={this.props.id} onClick={() => this.setState({ collapsed: !this.state.collapsed })}>
+      <li id={this.props.id} onClick={(e) => {
+        // Stop the click from propagating up the chain
+        e.stopPropagation();
+        this.setState({ collapsed: !this.state.collapsed })
+        }}>
         {this.props.label}
         {this.handleChildren(menu, this.props.id)}
       </li>
